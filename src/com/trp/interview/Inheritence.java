@@ -10,16 +10,24 @@ class A{
 	public A() {
 		System.out.println("A called");
 	}
+	 public static void creat() {
+		System.out.println("create");
+	}
 }
 public class Inheritence extends A{
 	
 	public void show() {
-		System.out.println("In B");
+		super.show();
 	}
 	
 	public Inheritence() {
 		//super();
 	}
+	
+	public void abc() {
+		A.creat();
+	}
+	//creat();
 	
 	
 	public static void main(String[] args) {

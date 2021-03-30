@@ -24,6 +24,9 @@ public class Largestk {
 
 		int [] arr = {1,2,3,4,5,6,-2,-5,-6};
 		
+		//Arrays.stream(arr).forEach(i -> i*5).collect();
+		
+		
 	//	System.out.println(Arrays.stream(arr).max().orElse(999));
 	//	System.out.println(new Largestk().func(arr));
 		
