@@ -32,6 +32,21 @@ public class EmployeeBuilder {
 	public EmployeeBuilder build() {
 		return new EmployeeBuilder(id,name,deptId);
 	}
+	public int getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public String getDeptId() {
+		return deptId;
+	}
+	@Override
+	public String toString() {
+		return "EmployeeBuilder [id=" + id + ", name=" + name + ", deptId=" + deptId + "]";
+	}
+	
 
 	
 }

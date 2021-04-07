@@ -16,14 +16,15 @@ import java.util.stream.IntStream;
 
 public class Largestk {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		int [] arr = {1,2,3,4,5,6,-2,-5,-6};
-		
+		for(Integer i: arr) {
+		System.out.println("list = "+Arrays.asList(arr).indexOf(Integer.valueOf(2)));
+		}
+		List<Integer> list =  IntStream.range(1,arr.length).boxed().collect(Collectors.toList());
+		System.out.println(list);
 		//Arrays.stream(arr).forEach(i -> i*5).collect();
 		
 		
